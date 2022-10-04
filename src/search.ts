@@ -16,7 +16,6 @@ const media_query =
     }
   }`;
 
-
 /**
  * Sub class for search related functions
  * @since 1.0.0
@@ -205,4 +204,3 @@ export class Search {
 			.then((body) => body.Page);
 	}
 }
-

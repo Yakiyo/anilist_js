@@ -49,4 +49,3 @@ export class People {
 			.then((body) => body.Staff);
 	}
 }
-

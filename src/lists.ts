@@ -62,4 +62,3 @@ export class Lists {
 			.then((body) => body.MediaListCollection);
 	}
 }
-

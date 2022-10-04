@@ -58,7 +58,7 @@ export class Anilist {
 		 * @see {@Link AniList.Lists}
 		 * @since 1.1.0
 		 */
-		this.lists = new Lists;
+		this.lists = new Lists();
 		/**
 		 * @augments Thread
 		 * @see {@Link AniList.Thread}
