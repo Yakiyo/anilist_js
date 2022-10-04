@@ -2,7 +2,12 @@ import { media as media_query } from '../graphql/media.ts';
 import { MEDIA_TYPE } from './utils/constants.ts';
 import { req } from './utils/req.ts';
 
-export const media = {
+/**
+ * Sub class for media related functions
+ * @since 1.0.0
+ * @memberof Anilist
+ */
+export class Media {
 	/**
 	 * Fetch an anime based on a anime id
 	 * @since 1.0.0
@@ -24,7 +29,7 @@ export const media = {
 			},
 		})
 			.then((body) => body.Media);
-	},
+	}
 	/**
 	 * Fetch a manga based on a manga id
 	 * @since 1.0.0
@@ -46,5 +51,7 @@ export const media = {
 			},
 		})
 			.then((body) => body.Media);
-	},
-};
+	}
+}
+
+export const media = new Media();

@@ -4,7 +4,12 @@ import {
 } from '../graphql/thread.ts';
 import { req } from './utils/req.ts';
 
-export const thread = {
+/**
+ * Sub class for thread related functions
+ * @since 1.0.0
+ * @memberof Anilist
+ */
+export class Thread {
 	/**
 	 * Gets a forum thread
 	 * @since 1.0.0
@@ -24,7 +29,7 @@ export const thread = {
 			},
 		})
 			.then((body) => body.Thread);
-	},
+	}
 	/**
 	 * Gets the comments of a thread
 	 * @since 1.0.0
@@ -48,5 +53,5 @@ export const thread = {
 			},
 		})
 			.then((body) => body.Page.threadComments);
-	},
-};
+	}
+}

@@ -16,7 +16,13 @@ const media_query =
     }
   }`;
 
-export const search = {
+
+/**
+ * Sub class for search related functions
+ * @since 1.0.0
+ * @memberof Anilist
+ */
+export class Search {
 	/**
 	 * Search for animes by a search term
 	 * @since 1.0.0
@@ -44,7 +50,7 @@ export const search = {
 			},
 		})
 			.then((body) => body.Page);
-	},
+	}
 	/**
 	 * Search for mangas by a search term
 	 * @since 1.0.0
@@ -72,7 +78,7 @@ export const search = {
 			},
 		})
 			.then((body) => body.Page);
-	},
+	}
 	/**
 	 * Search for users by a search term
 	 * @since 1.0.0
@@ -113,7 +119,7 @@ export const search = {
 			},
 		})
 			.then((body) => body.Page);
-	},
+	}
 	/**
 	 * Search for staffs by a search term
 	 * @since 1.0.0
@@ -156,7 +162,7 @@ export const search = {
 			},
 		})
 			.then((body) => body.Page);
-	},
+	}
 	/**
 	 * Search for studios by a search term
 	 * @since 1.0.0
@@ -197,5 +203,6 @@ export const search = {
 			},
 		})
 			.then((body) => body.Page);
-	},
-};
+	}
+}
+

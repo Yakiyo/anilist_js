@@ -1,8 +1,8 @@
-import { media } from './media.ts';
-import { people } from './people.ts';
-import { search } from './search.ts';
-import { lists } from './lists.ts';
-import { thread } from './thread.ts';
+import { Media } from './media.ts';
+import { People } from './people.ts';
+import { Search } from './search.ts';
+import { Lists } from './lists.ts';
+import { Thread } from './thread.ts';
 
 /**
  * Base class to interact with the Anilist api
@@ -19,7 +19,7 @@ export class Anilist {
 	/**
 	 * Creates an instance of Anilist.
 	 * @memberof Anilist
-	 * @hideconstructor
+	 * @ignore
 	 */
 	constructor() {
 		// Run a check if permissions were granted or not. If not, then throw error. Else move on
@@ -35,10 +35,35 @@ export class Anilist {
 			}
 		})();
 
-		this.media = media;
-		this.people = people;
-		this.search = search;
-		this.lists = lists;
-		this.thread = thread;
+		/**
+		 * @augments Media
+		 * @see {@Link AniList.Media}
+		 * @since 1.1.0
+		 */
+		this.media = new Media();
+		/**
+		 * @augments People
+		 * @see {@Link AniList.People}
+		 * @since 1.1.0
+		 */
+		this.people = new People();
+		/**
+		 * @augments Search
+		 * @see {@Link AniList.Search}
+		 * @since 1.1.0
+		 */
+		this.search = new Search();
+		/**
+		 * @augments Lists
+		 * @see {@Link AniList.Lists}
+		 * @since 1.1.0
+		 */
+		this.lists = new Lists;
+		/**
+		 * @augments Thread
+		 * @see {@Link AniList.Thread}
+		 * @since 1.1.0
+		 */
+		this.thread = new Thread();
 	}
 }

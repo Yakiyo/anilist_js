@@ -2,7 +2,12 @@ import { req } from './utils/req.ts';
 import { character as chara_query } from '../graphql/character.ts';
 import { staff as staff_query } from '../graphql/staff.ts';
 
-export const people = {
+/**
+ * Sub class for people related functions
+ * @since 1.0.0
+ * @memberof Anilist
+ */
+export class People {
 	/**
 	 * Fetch a character based on character id
 	 * @since 1.0.0
@@ -22,7 +27,7 @@ export const people = {
 			},
 		})
 			.then((body) => body.Character);
-	},
+	}
 	/**
 	 * Fetch a staff based on staff id
 	 * @since 1.0.0
@@ -42,5 +47,6 @@ export const people = {
 			},
 		})
 			.then((body) => body.Staff);
-	},
-};
+	}
+}
+

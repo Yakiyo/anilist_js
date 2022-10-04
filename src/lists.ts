@@ -2,7 +2,12 @@ import { req } from './utils/req.ts';
 import { MEDIA_TYPE } from './utils/constants.ts';
 import { media_list } from '../graphql/media_list.ts';
 
-export const lists = {
+/**
+ * Sub class for list related functions
+ * @since 1.0.0
+ * @memberof Anilist
+ */
+export class Lists {
 	/**
 	 * Fetch Anime lists of a user
 	 * @since 1.0.0
@@ -29,7 +34,7 @@ export const lists = {
 			},
 		})
 			.then((body) => body.MediaListCollection.lists);
-	},
+	}
 	/**
 	 * Fetch Manga lists of a user
 	 * @since 1.0.0
@@ -55,5 +60,6 @@ export const lists = {
 			},
 		})
 			.then((body) => body.MediaListCollection);
-	},
-};
+	}
+}
+
