@@ -1,0 +1,14 @@
+{
+	"lint": {
+		"files": {
+			"include": ["./src"]
+		}
+	},
+	"fmt": {
+		"options": {
+			"useTabs": true,
+			"lineWidth": 70,
+			"singleQuote": true
+		}
+	}
+}
