@@ -1,9 +1,0 @@
-{
-	"typedocOptions": {
-		"name": "Anilist-js",
-		"entryPoints": ["src/anilist.ts"],
-		"out": "docs",
-		"skipErrorChecking": true,
-		"entryPointStrategy": "resolve"
-	}
-}
