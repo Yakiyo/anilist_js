@@ -6,7 +6,7 @@ const anilist = new Anilist();
 Deno.test('Media Test', async () => {
 	const anime = await anilist.media.anime(135806);
 	console.log(anime.title.romaji);
-	assertEquals(anime.title.romaji, 'Isekai Ojisan');
+	assertEquals(anime.title.romaji, 'Isekai Oji-san');
 });
 
 Deno.test('People Test', async () => {

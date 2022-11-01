@@ -8,14 +8,15 @@ import { Thread } from './thread.ts';
  * Base class to interact with the Anilist api
  * @since 1.0.0
  * @export
+ * @public
  * @class Anilist
  */
 export class Anilist {
-	media;
-	people;
-	search;
-	lists;
-	thread;
+	public media;
+	public people;
+	public search;
+	public lists;
+	public thread;
 	/**
 	 * Creates an instance of Anilist.
 	 * @memberof Anilist

@@ -54,4 +54,4 @@ export class Media {
 	}
 }
 
-export const media = new Media();
+
