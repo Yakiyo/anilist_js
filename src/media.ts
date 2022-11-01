@@ -53,5 +53,3 @@ export class Media {
 			.then((body) => body.Media);
 	}
 }
-
-

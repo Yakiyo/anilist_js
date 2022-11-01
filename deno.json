@@ -1,7 +1,9 @@
 {
 	"lint": {
 		"files": {
-			"include": ["./src"]
+			"include": [
+				"./src"
+			]
 		}
 	},
 	"fmt": {
@@ -10,5 +12,9 @@
 			"lineWidth": 70,
 			"singleQuote": true
 		}
+	},
+	"tasks": {
+		"fix": "deno fmt && deno lint",
+		"test": "deno test --allow-net=graphql.anilist.co"
 	}
 }
